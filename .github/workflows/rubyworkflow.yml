@@ -54,6 +54,11 @@ jobs:
       - name: Intalling Trufflehog tool for secretscan
         run: pip install trufflehog3
         
+        
+          # Runs a single command using the runners shell
+      - name: Running Trufflehog tool for secretscan
+        run: trufflehog3 ./
+        
    
         
    
