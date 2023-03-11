@@ -38,6 +38,11 @@ jobs:
       - name: Intalling SAST tool called brakeman
         run: sudo gem install brakeman
         
+        
+         # Runs a single command using the runners shell
+      - name: Running SAST tool called brakeman
+        run: brakeman ./
+        
    
         
    
