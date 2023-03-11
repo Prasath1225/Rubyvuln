@@ -41,7 +41,14 @@ jobs:
         
          # Runs a single command using the runners shell
       - name: Running SAST tool called brakeman and output
+        continue-on-error: true
         run: brakeman ./ -o output.html -o outputforrubyvulnscan.json
+        
+        
+      - uses: actions/upload-artifact@v3
+        with:
+          name: rubyvuln-output
+          path: outputforrubyvulnscan.json
         
    
         
