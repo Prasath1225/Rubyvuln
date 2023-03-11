@@ -40,8 +40,8 @@ jobs:
         
         
          # Runs a single command using the runners shell
-      - name: Running SAST tool called brakeman
-        run: brakeman ./
+      - name: Running SAST tool called brakeman and output
+        run: brakeman ./ -o output.html -o outputforrubyvulnscan.json
         
    
         
