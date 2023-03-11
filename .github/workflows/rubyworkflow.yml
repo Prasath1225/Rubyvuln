@@ -49,6 +49,10 @@ jobs:
         with:
           name: rubyvuln-output
           path: outputforrubyvulnscan.json
+          
+          # Runs a single command using the runners shell
+      - name: Intalling Trufflehog tool for secretscan
+        run: pip install trufflehog3
         
    
         
